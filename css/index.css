@@ -1,0 +1,211 @@
+/* ===== Global ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ===== Slider ===== */
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    transition: margin-left 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .slider-wrapper .slides { margin-left: 0; }
+#slide2:checked ~ .slider-wrapper .slides { margin-left: -100%; }
+#slide3:checked ~ .slider-wrapper .slides { margin-left: -200%; }
+
+.navigation {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bar {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background: gray;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#slide1:checked ~ .navigation label[for="slide1"],
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"] {
+    background: black;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    margin: 20px 0 40px;
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #050952;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ===== Services Section ===== */
+.services {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    background: #fff;
+}
+
+.service-card {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background: #e8e8e8;
+}
+
+.service-card h3 {
+    color: #050952;
+}
+
+/* ===== Logo Bar ===== */
+.logo-bar {
+    background: #fff;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.logo-content {
+    display: flex;
+    white-space: nowrap;
+    animation: scrollLeft 25s linear infinite;
+}
+
+.logo-content img {
+    height: 100px;
+    margin: 0 20px;
+}
+
+.logo-content span {
+    font-weight: bold;
+    color: #050952;
+    margin-left: 5px;
+    align-self: center;
+}
+
+@keyframes scrollLeft {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* ===== About Section ===== */
+.about {
+    max-width: 1190px;
+    margin: 0 auto 40px;
+    border-radius: 15px;
+    background: #f9f9f9;
+    padding: 40px;
+    text-align: left;
+}
+
+.about h2 {
+    color: #050952;
+    margin-bottom: 20px;
+}
+
+/* ===== Testimonials ===== */
+.testimonials {
+    background: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #050952;
+    margin-bottom: 30px;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    font-style: italic;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    background: #f1f1f1;
+}
+
+.testimonial-card h4 {
+    margin-top: 15px;
+    color: #333;
+    font-style: normal;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .logo-content img {
+        height: 80px;
+        margin: 0 10px;
+    }
+}

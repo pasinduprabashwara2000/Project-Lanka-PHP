@@ -1,0 +1,74 @@
+.page-header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+.page-header h1 {
+    color: #050952;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #555;
+    font-size: 16px;
+}
+
+.project-form {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-form h2 {
+    text-align: center;
+    color: #050952;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.project-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #050952;
+    font-size: 14px;
+}
+
+.project-form input,
+.project-form textarea,
+.project-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.project-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.project-form button {
+    display: inline-block;
+    background: #050952;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-form button:hover {
+    background: #3333aa;
+}

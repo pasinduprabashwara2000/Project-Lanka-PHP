@@ -27,7 +27,7 @@
 </div>
 
 <section class="page-header">
-    <h1>Mobile Applications</h1>
+    <h2>Mobile Applications</h2>
     <p>Explore our innovative mobile apps designed for Android and iOS platforms.</p>
 </section>
 
@@ -69,7 +69,7 @@
 </section>
 
 <section class="cta">
-    <h2>Need a Mobile App for Your Business?</h2>
+    <h3>Need a Mobile App for Your Business?</h3><br>
     <a href="inquire.php">Contact Us Today</a>
 </section>
 

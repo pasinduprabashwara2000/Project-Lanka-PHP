@@ -27,7 +27,7 @@
 </div>
 
 <section class="page-header">
-    <h1>Web Applications</h1>
+    <h2>Web Applications</h2>
     <p>Discover our portfolio of modern, responsive, and user-friendly web applications.</p>
 </section>
 
@@ -75,7 +75,7 @@
 </section>
 
 <section class="cta">
-    <h2>Looking for a Custom Web Application?</h2>
+    <h3>Looking for a Custom Web Application?</h3><br>
     <a href="inquire.php">Contact Us Today</a>
 </section>
 

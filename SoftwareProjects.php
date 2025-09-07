@@ -27,7 +27,7 @@
 </div>
 
 <section class="page-header">
-    <h1>Software Applications</h1>
+    <h2>Software Applications</h2>
     <p>Explore our collection of custom-built software applications designed to solve real-world problems.</p>
 </section>
 
@@ -75,7 +75,7 @@
 </section>
 
 <section class="cta">
-    <h2>Need a Custom Software Solution?</h2>
+    <h3>Need a Custom Software Solution?</h3><br>
     <a href="inquire.php">Contact Us Today</a>
 </section>
 
